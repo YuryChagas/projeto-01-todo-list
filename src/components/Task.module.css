@@ -1,0 +1,81 @@
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.task a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 0.25rem;
+  color: var(--gray-300);
+}
+
+.task a:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+.task input[type="checkbox"] {
+  appearance: none;
+  height: 1.5rem;
+  width: 1.6rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.task input[type="checkbox"]:hover {
+  background: var(--blueDark);
+}
+
+.task input[type="checkbox"]:checked {
+  background: var(--purpleDark);
+  border-color: var(--purpleDark);
+}
+
+.task input[type="checkbox"]:checked:focus {
+  outline: transparent;
+  box-shadow: none;
+}
+
+.task input[type="checkbox"]:checked::before {
+  content: '✔';
+  font-size: 0.875rem;
+  position: absolute;
+  top: 0;
+  left: 0.28rem;
+  color: var(--gray-100);
+}
+
+.task input[type="checkbox"]:checked:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+}
+
+.task p {
+  width: 100%;
+  text-align: start;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--gray-100);
+}
+
+.task input:checked + p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}

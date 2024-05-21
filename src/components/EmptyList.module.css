@@ -1,0 +1,23 @@
+
+.listZero {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.listZero p {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--gray-300);
+}
+
+.listZero span {
+  font-weight: 400;
+}

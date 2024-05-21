@@ -1,0 +1,82 @@
+
+
+.newTask {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: -3.7rem;
+ }
+.newTask input {
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+
+  color: var(--gray-100);
+  line-height: 1.4;
+
+}
+
+.newTask button {
+  background: var(--blueDark);
+  color: var(--gray-100);
+  border-radius: 8px;
+  border: none;
+  padding: 1rem;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.newTask button:hover{
+  background: var(--blue);
+}
+
+
+.Tasks {
+  width: 100%;
+  margin-top: 4rem ;
+}
+
+.inforTasks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.inforTasks strong {
+  display: flex;
+  gap: 8px;
+}
+
+.inforTasks strong:nth-child(1) {
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.inforTasks strong:nth-child(2) {
+  color: var(--purple);
+  font-size: 0.875rem;
+}
+
+.inforTasks strong p {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.list {
+  width: 100%;
+  margin-top: 24px;
+}
+
